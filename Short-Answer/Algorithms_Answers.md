@@ -2,7 +2,7 @@
 
 ## Exercise I
 
-a) O(n^3) --n multiplies by itself three times therfore the while loop runs n^3 times.
+a) O(log(n)) While at first glance this function appears to be O(n^3) because n multiplies itself 3 times. Upon further review we see that for every stop in the loop we are incrementing a by +a * n^2. This means that with each step in the loop we are skipping a bunch of places meaning we never really stop at every place in the loop. So at worst our runtime would be O(log(n))
 
 
 b) O(n log(n)) -- the for loop will run n times O(n) and the while loop incriments j by 2 meaning it runs at half of n times O(log(n)) making the total O(n log(n)).
